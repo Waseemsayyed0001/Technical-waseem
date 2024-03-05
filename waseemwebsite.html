@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Waseem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        img{
+            width: 200px;
+                height: 130px;
+             
+
+        }
+        .place input{
+            padding: 5px;
+            margin: 20px 20px;
+            display: flex;
+            align-items: center;
+            width: 400px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+           
+        }
+        .btnn{
+            font-size: 20px;
+            background-color: #ff6347;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+            border: none;
+            position: absolute;
+            left: 550px;
+            top: 20px;
+            cursor: pointer; 
+            
+        }
+        .btnn:hover {background-color:#ee3124;}
+
+
+
+
+
+
+        
+        header{
+            display: flex;
+            background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+            height: 75px;
+        
+          
+           
+
+        }
+        .social-media a{
+            margin: 0px 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+
+        }
+        .social-media{
+            display: flex;
+            position: absolute;
+            right: 1%;
+            top: 30px;
+          
+            align-items: center;
+        }
+        .social-media  i{
+          transition: all 0.3s ease-in-out ;
+        }
+        .social-media  i:hover{
+          transform: scale(1.2) rotate(-20deg);
+          color:white;
+        }
+        nav{
+            background: teal;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            width: 100%;
+         
+          
+            
+        }
+        nav a{
+            margin: 0px 60px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+          
+           
+          
+        }
+       .home{
+        margin-left: 16%;
+       }
+       .homee .sidebar :where(h1 , a) {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.homee .sidebar .sidebar-links a:nth-child(odd) {
+    color: crimson;
+    background: #FAFAFA;
+}
+.homee .sidebar .sidebar-links a:hover {
+    background: rgba(220, 20, 60, 0.08);
+}
+.homee{
+    width: fit-content;
+}
+.display{
+    display: flex;
+}
+.boxx{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgb(97, 97, 97) 0.5px 0.5px 10px;
+    overflow: hidden;
+    margin: 10px ;
+   /* padding: 10px; */
+}
+.head{
+   
+    margin-left: 20px;
+    color: crimson;
+font-size: 18px;
+    text-decoration: underline black;
+}
+.website{
+    padding: 10px;
+    /* display: flex; */
+    column-gap: 20px;
+   
+}
+.go img{
+    width: 200px;
+   display: flex;
+}
+.goo{
+    background: teal;
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    header .social-media .icons a{
+        display: none;
+        
+    }
+    nav{
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    .home{
+        margin: 10px 0;
+    }
+    .homee .sidebar :where(h1 , a) {
+        font-size: 14px;
+    }
+    .btnn{
+        position: absolute;
+    left: 500px;
+    top: 20px 
+    }
+    .place input{
+        width: 350px;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+    }
+    .boxx {
+        width: 100%;
+    }
+    .go img{
+        width: 100%;
+    }
+    .goo{
+        width: 100%;
+    }
+    .website{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+            
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="">
+
+            </div>
+            <div class="place">
+                <input type="text" placeholder="Search..." id="searchInput"/>
+                <button class="btnn">search</button>
+            </div>
+            <div class="social-media">
+                <div class="icons">
+                  
+                    <a href="https://youtube.com">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://youtube.com">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://youtube.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn" href="login.html">Login</a>
+                    <a class="btn" href="signup.html">Signup</a>
+                </div>
+            </div>
+        </div>
+        </header>
+        <nav>
+            <div class="home">
+                 <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+           
+        </nav>
+    </div>
+    <div class="display">
+    <div class="homee">
+        <div class="sidebar">
+            <h1 style="font-size: 18px;" class="heading">My All Projects</h1>
+            <div class="sidebar-links">
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/According/index.html">Accordion</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Age%20calculator/index.html">Age Calculator</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Calender%20front/calender.htmll">Calender</a>
+                <a target="_blank" href="html practice/Card theme switch/index.html">Card Theme Switcher</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/digital%20clock/index.html">Digital Clock</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Flag/index.html">Flag</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Form%20validation/index.html">Validation</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/FORM2/index.html">Login & Signup</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/FORM2/index.html">OTP Generator</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Password%20Generator/password-generator.html">Password
+                    Generator</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/search%20bar%202/index.html">Search js</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Tags%20input/index.html">Tag Generator</a>
+                <a target="_blank" href="https://ammarthedeveloper.github.io/Ammar-Official/html%20practice/Todo%20list/index.html">TODO LIST</a>
+                <a target="_blank" href="html practice/website theme color switcher/index.html">Website Theme
+                    Switcher</a>
+                <a target="_blank" href="js practice/fb PostBox/index.html">FB PostBox Switcher</a>
+                <a target="_blank" href="js practice/music player/index.html">Music player</a>
+                <a target="_blank" href="js practice/notes app/index.html">Notes App</a>
+                <a target="_blank" href="js practice/qr code generator/index.html">QR Generator</a>
+                <a target="_blank" href="js practice/Tic Tac Toe/index.html">Tic Tac Toe</a>
+            </div>
+        </div>
+    </div>
+    <section class="website">
+        <div class="inox">
+      <a class="head" href="file:///C:/Users/Dell/Desktop/waseem/html/delivery.html" target="_blank">Delivery service website</a>
+        <div class="box">
+            <a href="file:///C:/Users/Dell/Desktop/waseem/html/delivery.html" target="_blank">
+            <div class="boxx">
+               <div> <img src="https://i.pinimg.com/736x/35/54/df/3554df235c409d0434b7a950bee58e1c.jpg" alt=""></div>
+            
+            </div>
+        </a>
+            
+        </div>
+    </div>
+    <div class="inox">
+        <a class="head" href="">Go Transcript website</a>
+        <div class="box">
+            <a href="file:///C:/Users/Dell/Desktop/waseem/html/first.html" target="_blank">
+            <div class="boxx">
+                <div class="goo">
+               <div class="go"> <img src="https://i.pcmag.com/imagery/reviews/038L7HVvQ1wmmY5S2KCt4V0-17.fit_lim.size_1050x591.v1666703303.jpg
+                " alt="">
+            </div>
+            </div>
+            
+            </div>
+        </a>
+            
+        </div>
+    </div>
+    </section>
+    </div>
+
+</body>
+</html>
